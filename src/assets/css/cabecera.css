@@ -1,0 +1,41 @@
+.cabecera {
+  display: flex;
+  justify-content: center;
+}
+.cabecera {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 999;
+}
+
+.m\:barra {
+  display: none;
+}
+
+.logotipo {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+.logotipo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navegacion {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+}
+.tema {
+  display: flex;
+  align-items: center;
+}
+
+@media (width >= 992px) {
+  .m\:barra {
+    display: none;
+  }
+}
