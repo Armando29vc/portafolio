@@ -18,7 +18,7 @@ function App() {
         <main className="principal">
           <Routes>
             {/* Página principal */}
-            <Route path="/" element={<Index />} />
+            <Route path="/portafoliox" element={<Index />} />
             {/*  <Route path="/cursos" element={<Cursos />} /> */}
           </Routes>
         </main>
