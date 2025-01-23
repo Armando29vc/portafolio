@@ -11,22 +11,20 @@ import Index from "./pages";
 
 function App() {
   return (
-    <BrowserRouter basename="/portafoliox">
-      <Router>
-        <div className="contenedor">
-          <nav className="m:barra"></nav>
-          <Cabecera />
-          <main className="principal">
-            <Routes>
-              {/* Página principal */}
-              <Route path="/" element={<Index />} />
-              {/*  <Route path="/cursos" element={<Cursos />} /> */}
-            </Routes>
-          </main>
-          <PiePagina />
-        </div>
-      </Router>
-    </BrowserRouter>
+    <Router basename="/portafoliox">
+      <div className="contenedor">
+        <nav className="m:barra"></nav>
+        <Cabecera />
+        <main className="principal">
+          <Routes>
+            {/* Página principal */}
+            <Route path="/" element={<Index />} />
+            {/* <Route path="/cursos" element={<Cursos />} /> */}
+          </Routes>
+        </main>
+        <PiePagina />
+      </div>
+    </Router>
   );
 }
 
