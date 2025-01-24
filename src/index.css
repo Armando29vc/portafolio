@@ -192,6 +192,7 @@ cite {
   width: 100%; /* La imagen ocupa el 100% del ancho disponible de su contenedor */
   height: 100%; /* La imagen ocupa el 100% de la altura disponible de su contenedor */
   object-fit: contain;
+  border-radius: 0;
 }
 
 .c-educacion::before {

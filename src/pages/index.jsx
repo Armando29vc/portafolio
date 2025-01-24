@@ -21,7 +21,7 @@ function Index() {
       {
         href: "https://www.instagram.com/tecnm_campus_istmo/",
         title: "Instagram TecNM",
-        iconSrc: "/portafolio/icons/Instagram_Glyph_Gradient.svg",
+        iconSrc: "Instagram_Glyph_Gradient.png",
         alt: "Instagram",
       },
       {
