@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./armando.css";
@@ -13,8 +13,7 @@ function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <div className="contenedor">
-        <nav className="m:barra"></nav>
-        <Cabecera />
+        <Cabecera/>
         <main className="principal">
           <Routes>
             {/* Página principal */}

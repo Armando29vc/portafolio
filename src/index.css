@@ -134,7 +134,7 @@ cite {
   overflow: hidden;
 }
 .c-educacion {
-  background-image: url("/tecnm_entrada.jpg");
+  background-image: url("/tecnm_entrada.avif");
   background-position: center 30%;
   background-size: cover;
 }
@@ -174,7 +174,7 @@ cite {
 .redes-sociales {
   display: grid;
   max-width: 170px;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-template-columns: repeat(auto-fit, 30px);
   gap: 1rem;
 }
 .tarjeta-tecnm img {

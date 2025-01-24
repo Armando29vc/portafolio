@@ -4,6 +4,8 @@ import GraficoCircular from "../components/GraficoCircular";
 import TarjetaSocial from "../components/TarjetaSocial";
 
 function Index() {
+  
+
   const tecnmData = {
     redesSociales: [
       {
@@ -15,19 +17,19 @@ function Index() {
       {
         href: "https://www.youtube.com/@ComunicacionITI",
         title: "YouTube TecNM",
-        iconSrc: "youtube_social_circle_red.png",
+        iconSrc: "youtube_social_circle_red.avif",
         alt: "YouTube",
       },
       {
         href: "https://www.instagram.com/tecnm_campus_istmo/",
         title: "Instagram TecNM",
-        iconSrc: "Instagram_Glyph_Gradient.png",
+        iconSrc: "Instagram_Glyph_Gradient.avif",
         alt: "Instagram",
       },
       {
         href: "https://www.tiktok.com/@ingsistemasiti",
         title: "TikTok TecNM",
-        iconSrc: "TikTok_Icon_Black_Circle.png",
+        iconSrc: "TikTok_Icon_Black_Circle.avif",
         alt: "TikTok",
       },
     ],
@@ -74,7 +76,7 @@ function Index() {
         </div>
         <div className="c-presentacion">
           <h2>José Armando Vázquez Carrasco</h2>
-          <h5>Ing. Sistemas Computacionales.</h5>
+          <h3>Ing. Sistemas Computacionales.</h3>
         </div>
         <div className="c-descripcion">
           <p>
@@ -127,7 +129,7 @@ function Index() {
 
             <div className="tarjeta-tecnm">
               <img
-                src="tecnm.jpg"
+                src="tecnm.avif"
                 alt="Logotipo del Instituto Tecnológico del Istmo"
               />
               <TarjetaSocial

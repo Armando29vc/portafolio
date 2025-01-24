@@ -2,17 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="armando29vc.png" />
+    <link rel="icon" type="image/avif" href="armando29vc.avif" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hola Bienvenido a mi portafolio, mi nombre es Armando29vc"
+    />
     <title>Armando29vc</title>
-    <link rel="preload" href="/fonts/Lemonada-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="/fonts/Lemonada-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin="anonymous"
+    />
     <script>
       const temaGuardado = localStorage.getItem("tema");
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-      const temaInicial =
-        temaGuardado || (prefersDark ? "oscuro" : "claro");
+      const temaInicial = temaGuardado || (prefersDark ? "oscuro" : "claro");
       document.documentElement.className = temaInicial;
     </script>
   </head>

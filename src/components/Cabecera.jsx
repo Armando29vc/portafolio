@@ -23,7 +23,7 @@ function Cabecera() {
     document.body.classList.add(tema);
   }, [tema]);
 
-  const tecnmData = {
+  const miData = {
     redesSociales: [
       {
         href: "https://www.facebook.com/Armando29vc",
@@ -34,24 +34,51 @@ function Cabecera() {
       {
         href: "https://www.youtube.com/@JArmando29vc",
         title: "YouTube Armando29vc",
-        iconSrc: "youtube_social_circle_red.png",
+        iconSrc: "youtube_social_circle_red.avif",
         alt: "YouTube",
       },
     ],
   };
+
   return (
     <header className="cabecera">
       <div className="navegacion">
+        <div className="barra">
+          <label htmlFor="barra-lateral" className="abrir">
+            <img
+              src="icons/hamburguesa.svg"
+              alt="vector hamburguesa"
+            />
+          </label>
+        </div>
+        <input type="checkbox" id="barra-lateral" />
+        <div className="opacar">
+          <nav className="m:barra">
+            <div className="barra-cerrar">
+              <label htmlFor="barra-lateral" className="cerra">
+                <img src="icons/cerrar.svg" alt="" />
+              </label>
+            </div>
+            <div className="mi-rsocial">
+              <span>Mis Redes</span>
+              <TarjetaSocial
+                logoSrc={miData.logoSrc}
+                logoAlt={miData.logoAlt}
+                redesSociales={miData.redesSociales}
+              />
+            </div>
+          </nav>
+        </div>
         <div className="logotipo">
-          <img src="armando29vc.png" alt="Logotipo de Armando29vc" />
+          <img src="armando29vc.avif" alt="Logotipo de Armando29vc" />
           <h1 className="m:texto-xs texto-lg">Armando29vc</h1>
         </div>
 
         <div className="mi-red-social">
           <TarjetaSocial
-            logoSrc={tecnmData.logoSrc}
-            logoAlt={tecnmData.logoAlt}
-            redesSociales={tecnmData.redesSociales}
+            logoSrc={miData.logoSrc}
+            logoAlt={miData.logoAlt}
+            redesSociales={miData.redesSociales}
           />
           <img
             className="tema"
