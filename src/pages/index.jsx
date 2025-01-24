@@ -11,7 +11,7 @@ function Index() {
       {
         href: "https://www.facebook.com/tecnm.campus.istmo",
         title: "Facebook TecNM",
-        iconSrc: "/icons/facebook.svg",
+        iconSrc: "/portafoliox/icons/facebook.svg",
         alt: "Facebook",
       },
       {
@@ -23,7 +23,7 @@ function Index() {
       {
         href: "https://www.instagram.com/tecnm_campus_istmo/",
         title: "Instagram TecNM",
-        iconSrc: "/icons/Instagram_Glyph_Gradient.svg",
+        iconSrc: "/portafoliox/icons/Instagram_Glyph_Gradient.svg",
         alt: "Instagram",
       },
       {

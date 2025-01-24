@@ -11,7 +11,7 @@ import Index from "./pages";
 
 function App() {
   return (
-    <Router basename="/portafoliox">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="contenedor">
         <nav className="m:barra"></nav>
         <Cabecera />
