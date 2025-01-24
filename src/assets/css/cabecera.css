@@ -9,6 +9,8 @@
   z-index: 999;
 }
 
+
+
 .m\:barra {
   display: none;
 }
@@ -29,9 +31,15 @@
   width: 80vw;
   justify-content: space-between;
 }
-.tema {
+.mi-red-social {
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
+.tema{
+  display: flex;
+  width: 35px;
+  height: 35px;
 }
 
 @media (width >= 992px) {

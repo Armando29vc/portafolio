@@ -6,7 +6,6 @@
   box-sizing: border-box;
 }
 
-
 img {
   width: 100%;
 }
@@ -103,7 +102,6 @@ cite {
   height: 25px;
 }
 
-
 /* habilidad */
 .habilidad {
   display: flex;
@@ -118,7 +116,6 @@ cite {
   justify-content: center;
 }
 
-
 .educacion {
   width: 90vw;
 }
@@ -129,7 +126,6 @@ cite {
   height: 100%;
   padding-top: 1rem;
 }
-
 
 .c-educacion {
   width: 100%;
@@ -177,8 +173,8 @@ cite {
 }
 .redes-sociales {
   display: grid;
-  min-width: 150px;
-  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  max-width: 170px;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
   gap: 1rem;
 }
 .tarjeta-tecnm img {
@@ -186,13 +182,16 @@ cite {
   height: 120px;
   border-radius: 20px;
 }
-.tarjeta-tecnm a {
-  display: flex;
-}
-.redes-sociales a img,
-.tarjeta-tecnm a svg {
+
+.redes-sociales a {
+  display: block;
   width: 30px;
   height: 30px;
+}
+.redes-sociales a img{
+  width: 100%; /* La imagen ocupa el 100% del ancho disponible de su contenedor */
+  height: 100%; /* La imagen ocupa el 100% de la altura disponible de su contenedor */
+  object-fit: contain;
 }
 
 .c-educacion::before {
@@ -207,7 +206,6 @@ cite {
   z-index: 1;
 }
 
-
 .pie-pagina {
   display: flex;
   justify-content: center;
@@ -216,7 +214,6 @@ cite {
 .c-pie-pagina {
   text-align: center;
 }
-
 
 @media (width >= 992px) {
   .m\:barra {
@@ -228,7 +225,7 @@ cite {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .principal section{
+  .principal section {
     width: 80vw;
   }
   .tarjeta {

@@ -5,8 +5,6 @@ import TarjetaSocial from "../components/TarjetaSocial";
 
 function Index() {
   const tecnmData = {
-    logoSrc: "tecnm.jpg",
-    logoAlt: "Logotipo del Instituto Tecnológico del Istmo",
     redesSociales: [
       {
         href: "https://www.facebook.com/tecnm.campus.istmo",
@@ -122,15 +120,22 @@ function Index() {
         <h2>Educación</h2>
         <div className="c-educacion">
           <div className="caja-tecnm">
-            <div className="titulo-tecnm">
+            <div className="titulo-tecnm texto-blanco">
               <h3>TECNM Campus Istmo</h3>
               <p>2019-2024</p>
             </div>
-            <TarjetaSocial
-              logoSrc={tecnmData.logoSrc}
-              logoAlt={tecnmData.logoAlt}
-              redesSociales={tecnmData.redesSociales}
-            />
+
+            <div className="tarjeta-tecnm">
+              <img
+                src="tecnm.jpg"
+                alt="Logotipo del Instituto Tecnológico del Istmo"
+              />
+              <TarjetaSocial
+                logoSrc={tecnmData.logoSrc}
+                logoAlt={tecnmData.logoAlt}
+                redesSociales={tecnmData.redesSociales}
+              />
+            </div>
           </div>
         </div>
       </section>
