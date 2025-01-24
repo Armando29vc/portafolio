@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../assets/css/cabecera.css";
 import TarjetaSocial from "../components/TarjetaSocial";
 
@@ -40,22 +40,71 @@ function Cabecera() {
     ],
   };
 
+  const barraRef = useRef(null); // Referencia a la barra lateral
+  const checkboxRef = useRef(null); // Referencia al checkbox
+
+  useEffect(() => {
+    // Manejar clic fuera de la barra lateral
+    const handleClickOutside = event => {
+      const isOutside =
+        barraRef.current &&
+        checkboxRef.current &&
+        !barraRef.current.contains(event.target) &&
+        !checkboxRef.current.contains(event.target);
+
+      isOutside &&
+        ((checkboxRef.current.checked = false),
+        (document.body.style.overflow = "auto"));
+    };
+
+    // Manejar cambio de tamaño de ventana
+    const handleResize = () => {
+      const isHidden =
+        barraRef.current &&
+        checkboxRef.current &&
+        window.getComputedStyle(barraRef.current).display === "none";
+
+      isHidden &&
+        ((checkboxRef.current.checked = false),
+        (document.body.style.overflow = "auto"));
+    };
+
+    // Manejar cambio del checkbox
+    const handleCheckboxChange = () => {
+      document.body.style.overflow = checkboxRef.current?.checked
+        ? "hidden"
+        : "auto";
+    };
+
+    // Agregar eventos
+    document.addEventListener("click", handleClickOutside);
+    window.addEventListener("resize", handleResize);
+    checkboxRef.current?.addEventListener("change", handleCheckboxChange);
+
+    // Verificar al montar el componente
+    handleResize();
+
+    // Limpiar eventos al desmontar el componente
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("resize", handleResize);
+      checkboxRef.current?.removeEventListener("change", handleCheckboxChange);
+    };
+  }, []);
+
   return (
     <header className="cabecera">
       <div className="navegacion">
         <div className="barra">
-          <label htmlFor="barra-lateral" className="abrir">
-            <img
-              src="icons/hamburguesa.svg"
-              alt="vector hamburguesa"
-            />
+          <label htmlFor="barra-lateral" className="abrir" tabIndex="0">
+            <img src="icons/hamburguesa.svg" alt="Abri Menu" />
           </label>
         </div>
-        <input type="checkbox" id="barra-lateral" />
+        <input type="checkbox" id="barra-lateral" ref={checkboxRef} />
         <div className="opacar">
-          <nav className="m:barra">
+          <nav className="m:barra" ref={barraRef}>
             <div className="barra-cerrar">
-              <label htmlFor="barra-lateral" className="cerra">
+              <label htmlFor="barra-lateral" className="cerra" tabIndex="0">
                 <img src="icons/cerrar.svg" alt="" />
               </label>
             </div>

@@ -43,6 +43,9 @@
   padding: 5px;
   justify-content: end;
 }
+.barra-cerrar .cerra{
+  display: flex;
+}
 .barra-cerrar img {
   max-width: 40px;
 }

@@ -101,7 +101,7 @@ function Index() {
             Soy un joven recien egresado, que trabaja socialmente sin problemas,
             me encanta adquir nuevos conocimientos y siempre estar actualizado
             constantemente. Deseo desarrollarme en una empresa que tenga visión
-            a futuro y que mas que ser un trabajador ser un miembro del equipo.
+            a futuro y que más que ser un trabajador ser un miembro del equipo.
           </p>
         </section>
       </section>
