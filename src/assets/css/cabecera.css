@@ -36,6 +36,11 @@
   align-items: center;
   gap: 1rem;
 }
+
+.mi-red-social .redes-sociales{
+  display: none;
+}
+
 .tema{
   display: flex;
   width: 35px;
@@ -43,6 +48,9 @@
 }
 
 @media (width >= 992px) {
+  .mi-red-social .redes-sociales{
+    display: flex;
+  }
   .m\:barra {
     display: none;
   }
