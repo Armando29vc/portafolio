@@ -36,9 +36,9 @@ function Index() {
   };
 
   const habilidades = [
-    { nombre: "HTML5", porcentaje: 70, icono: "icons/html5.svg" },
-    { nombre: "CSS3", porcentaje: 80, icono: "icons/css3.svg" },
-    { nombre: "JS", porcentaje: 65, icono: "icons/js.svg" },
+    { nombre: "HTML5", porcentaje: 83, icono: "icons/html5.svg" },
+    { nombre: "CSS3", porcentaje: 85, icono: "icons/css3.svg" },
+    { nombre: "JS", porcentaje: 80, icono: "icons/js.svg" },
   ];
 
   useEffect(() => {
