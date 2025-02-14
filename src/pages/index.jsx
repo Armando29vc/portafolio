@@ -49,7 +49,7 @@ function Index() {
       relative bg-[var(--color-bg)] borde-mexicano 
       p-4 rounded-lg md:grid md:gap-x-[1rem] md:!w-[70vw] lg:!w-[48vw] h-fit">
           <div className="aparecer w-[150px] md:row-[1/_span_3] rounded-[20px] overflow-hidden">
-            <img className="h-[100%] object-cover " src="nagatoro.jpg" alt="" />
+            <img className="h-[100%] object-cover " src="JArmando.png" alt="José Armando Vázquez Carrasco" />
           </div>
           <div className="pt-[.5rem] pb-[.5rem]  md:row-[1] md:col-[2/span2]">
             <h2 className="text-sm md:text-xl text-[var(--color-texto-dos)] font-bold">Hola soy </h2>
