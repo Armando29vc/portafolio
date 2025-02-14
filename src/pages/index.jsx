@@ -59,9 +59,7 @@ function Index() {
           </div>
           <div className="md:row-[2] md:col-[2/span2]">
             <p className="text-sm">
-              Me encanta el anime 🐞❤️🐾 , 🎮 los video juegos 🕹️, la musica
-              electronica 🎧 y las clasicas 📀, mi pasatiempo favorito es
-              la programación 💻.
+              Me encanta el anime 🐞❤️🐾, 🎮 los videojuegos 🕹️, la música electrónica 🎧 y clásica 📀, y mi pasatiempo favorito es la programación 💻.
             </p>
           </div>
           <div className="flex flex-wrap gap-x-[.5rem] md:row-[3] md:col-[2/span2] mt-[.5rem] mb-[.5rem]">
