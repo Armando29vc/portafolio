@@ -130,11 +130,11 @@ function Index() {
           <img src="tecnm_entrada.avif" alt="" className="absolute object-cover h-[100%]" />
 
           <div className="flex flex-col w-full h-[100%] justify-around items-center">
-            <div className=" z-2 w-full h-fit flex flex-col items-center gap-[1rem]">
+            <div className=" z-2 w-full h-fit flex flex-col items-center">
               <h3 className="text-white">TECNM Campus Istmo</h3>
               <p className="text-sm text-gray-300">2019 - 2024</p>
             </div>
-            <div className="z-2 w-full h-fit flex flex-col items-center
+            <div className="z-2 w-full h-fit flex flex-col items-center gap-[1rem]
           ">
               <img
                 src="tecnm.png"
