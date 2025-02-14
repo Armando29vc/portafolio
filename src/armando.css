@@ -1,4 +1,24 @@
 /* animaciones */
+.animacion-latido {
+  animation-name: latir;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes latir {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
 
 @keyframes aparecer {
   from {
@@ -9,106 +29,15 @@
   }
 }
 
-.texto-blanco{
-  color: #fff;
-}
-
-.m\:texto-xs {
-  font-size: 0.75rem; /* 12px */
-  line-height: 1rem; /* 16px */
-}
-.m\:texto-sm {
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.25rem; /* 20px */
-}
-.m\:texto-base {
-  font-size: 1rem; /* 16px */
-  line-height: 1.5rem; /* 24px */
-}
-.m\:texto-lg {
-  font-size: 1.125rem; /* 18px */
-  line-height: 1.75rem; /* 28px */
-}
-.m\:texto-xl {
-  font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
-}
-.m\:texto-2xl {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
-}
-.m\:texto-3xl {
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
-}
-.m\:texto-4xl {
-  font-size: 2.25rem; /* 36px */
-  line-height: 2.5rem; /* 40px */
-}
-.m\:texto-5xl {
-  font-size: 3rem; /* 48px */
-  line-height: 1rem;
-}
-.m\:texto-6xl {
-  font-size: 3.75rem; /* 60px */
-  line-height: 1;
-}
-
-.texto-centrado {
-  text-align: center;
-}
-
 .hover\:fondo-uno:hover {
   background-color: #c8c8c8;
 }
 
 .aparecer {
   opacity: 0;
-  animation: aparecer 1s ease-in-out forwards;
+  animation: aparecer 200ms ease-in-out forwards;
 }
 
-@media (width >= 992px) {
-  .texto-xs {
-    font-size: 0.75rem; /* 12px */
-    line-height: 1rem; /* 16px */
-  }
-  .texto-sm {
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.25rem; /* 20px */
-  }
-  .texto-base {
-    font-size: 1rem; /* 16px */
-    line-height: 1.5rem; /* 24px */
-  }
-  .texto-lg {
-    font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem; /* 28px */
-  }
-  .texto-xl {
-    font-size: 1.25rem; /* 20px */
-    line-height: 1.75rem; /* 28px */
-  }
-  .texto-2xl {
-    font-size: 1.5rem; /* 24px */
-    line-height: 2rem; /* 32px */
-  }
-  .texto-3xl {
-    font-size: 1.875rem; /* 30px */
-    line-height: 2.25rem; /* 36px */
-  }
-  .texto-4xl {
-    font-size: 2.25rem; /* 36px */
-    line-height: 2.5rem; /* 40px */
-  }
-  .texto-5xl {
-    font-size: 3rem; /* 48px */
-    line-height: 1rem;
-  }
-  .texto-6xl {
-    font-size: 3.75rem; /* 60px */
-    line-height: 1;
-  }
-}
 
 .porcentaje[style*="--porcentaje: 65"],
 .porcentaje[style*="--porcentaje: 66"],

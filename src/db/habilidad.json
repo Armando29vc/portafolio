@@ -1,0 +1,42 @@
+{
+  "frontend": {
+    "conocimientos": [
+      {
+        "icono": "icons/HTML5_Badge.svg",
+        "nombre": "HTML5"
+      },
+      {
+        "icono": "icons/css3.svg",
+        "nombre": "CSS3"
+      },
+      {
+        "icono": "icons/js.svg",
+        "nombre": "JS"
+      }
+    ],
+    "aprendiendo": [
+      {
+        "icono": "icons/tailwindcss-mark.d52e9897.svg",
+        "nombre": "Tailwind CSS"
+      }
+    ]
+  },
+  "backend": {
+    "conocimientos": [],
+    "aprendiendo": [
+      {
+        "icono": "icons/Strapi.favicon.svg",
+        "nombre": "Strapi"
+      }
+    ]
+  },
+  "base_datos": {
+    "conocimientos": [],
+    "aprendiendo": [
+      {
+        "icono": "elephant64.png",
+        "nombre": "PostgreSQL"
+      }
+    ]
+  }
+}

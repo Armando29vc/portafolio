@@ -12,16 +12,16 @@ import Index from "./pages";
 function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      <div className="contenedor">
+      <div className="contenedor grid grid-rows-[65px] h-screen">
         <Cabecera/>
-        <main className="principal">
+        <main className="flex flex-col items-center principal pb-[1rem]">
           <Routes>
             {/* Página principal */}
             <Route path="/" element={<Index />} />
             {/* <Route path="/cursos" element={<Cursos />} /> */}
           </Routes>
         </main>
-        <PiePagina />
+      
       </div>
     </Router>
   );

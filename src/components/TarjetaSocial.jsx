@@ -1,6 +1,6 @@
 function TarjetaSocial({ redesSociales }) {
   return (
-    <div className="redes-sociales">
+    <div className="grid max-w-[170px] grid-cols-[repeat(auto-fit,30px)] gap-x-[1rem]">
       {redesSociales.map((red, index) => (
         <a
           key={index}
