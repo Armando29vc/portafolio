@@ -9,7 +9,7 @@
   --color-texto: #fff;
   --color-texto-dos: #63d8ff;
   --color-texto-tres: #bbb;
-  --color-texto-cuatro: #8dfeff;
+  --color-texto-cuatro: #9fff6f;
 
   /* borde */
 }
@@ -37,7 +37,7 @@
   --color-texto: #000;
   --color-texto-dos: #0a00c1;
   --color-texto-tres: #4d4d4d;
-    --color-texto-cuatro: #4c61ff;
+    --color-texto-cuatro: #6400ff;
 
   /* borde */
 }
@@ -76,4 +76,9 @@ body {
   border: 1px solid transparent;
   /*   border-image: linear-gradient(to bottom right, green 0%,green 20%, #a0a0a0 30%, #a0a0a0 70%, red 80%,red 100%) 1; */
   filter: drop-shadow(0 0 3px var(--color-bg-tres));
+}
+.filtro-blanco {
+  border: 1px solid transparent;
+  /*   border-image: linear-gradient(to bottom right, green 0%,green 20%, #a0a0a0 30%, #a0a0a0 70%, red 80%,red 100%) 1; */
+  filter: drop-shadow(1px 1px 0 #fff);
 }

@@ -4,8 +4,8 @@
       {
         "href": "https://github.com/Armando29vc",
         "title": "GitHub Armando29vc",
-        "iconSrc": "/portafolio/icons/github-mark-white.svg",
-        "iconSrcClaro": "/portafolio/icons/github-mark.svg",
+        "iconSrc": "/portafolio/icons/github.svg",
+        "iconSrcClaro": "/portafolio/icons/github.svg",
         "alt": "GitHub"
       }
      
@@ -22,19 +22,19 @@
       {
         "href": "https://www.youtube.com/@ComunicacionITI",
         "title": "YouTube TecNM",
-        "iconSrc": "youtube_social_circle_red.avif",
+        "iconSrc": "/portafolio/icons/youtube.svg",
         "alt": "YouTube"
       },
       {
         "href": "https://www.instagram.com/tecnm_campus_istmo/",
         "title": "Instagram TecNM",
-        "iconSrc": "Instagram_Glyph_Gradient.avif",
+        "iconSrc": "/portafolio/icons/Instagram.svg",
         "alt": "Instagram"
       },
       {
         "href": "https://www.tiktok.com/@ingsistemasiti",
         "title": "TikTok TecNM",
-        "iconSrc": "TikTok_Icon_Black_Circle.avif",
+        "iconSrc": "/portafolio/icons/TikTok-Social-Icon-Mono-White.svg",
         "alt": "TikTok"
       }
     ]

@@ -1,6 +1,6 @@
 function TarjetaSocial({ redesSociales }) {
   return (
-    <div className="grid max-w-[170px] grid-cols-[repeat(auto-fit,30px)] gap-x-[1rem]">
+    <div className="flex gap-[1rem]">
       {redesSociales.map((red, index) => (
         <a
           key={index}
@@ -8,8 +8,9 @@ function TarjetaSocial({ redesSociales }) {
           title={red.title}
           target="_blank"
           rel="noopener noreferrer"
+          className="w-[30px] h-[30px]"
         >
-          <img src={red.iconSrc} alt={red.alt} />
+          <img src={red.iconSrc} alt={red.alt} className="w-[30px] h-[30px]" />
         </a>
       ))}
     </div>

@@ -95,7 +95,7 @@ function Index() {
       </section>
       <section className="w-[90vw] md:flex md:gap-x-[1rem] md:w-[80vw] md:justify-center">
         <section className="mt-[1rem] mb-[1rem]">
-          <h2 className="lg:text-xl font-bold mt-[1rem] mb-[1rem] text-[var(--color-texto-dos)]">Sobre mí</h2>
+          <h2 className="lg:text-xl font-bold mt-[1rem] mb-[1rem] text-[var(--color-texto-dos)]">📝Sobre mí</h2>
           <p>
             Soy un joven que le encanta crear diseños minimalista, trabajar en equipo, siempre estoy aprendiendo y mejorando, busco una empresa que le guste el arte del diseño, dar una cálida bienvenida a los clientes, estoy listo para formar parte del equipo.
           </p>
@@ -104,13 +104,13 @@ function Index() {
       </section>
       <section className="w-[90vw] md:flex md:gap-x-[1rem] md:w-[80vw] md:justify-center">
         <section className="w-full">
-          <h2 className="lg:text-xl font-bold mb-[.5rem] text-[var(--color-texto-dos)]">
-            {`</> Habilidades`}
+          <h2 className="lg:text-xl font-bold mb-[.5rem] text-[var(--color-texto-dos)] align-middle">
+            🎮Habilidades
           </h2>
           <div className="flex flex-wrap gap-[1rem] p-[.5rem]">
             <Tarjeta titulo="frontend" iconos={frontendConocimientos} />
           </div>
-          <h2 className="pl-[1rem] lg:text-xl font-bold mt-[.5rem] mb-[.5rem] text-[var(--color-texto-dos)]">Aprendiendo</h2>
+          <h2 className="pl-[1rem] lg:text-xl font-bold mt-[.5rem] mb-[.5rem] text-[var(--color-texto-dos)]">📚Aprendiendo</h2>
           <div className="flex flex-wrap gap-[1rem] p-[.5rem]">
             <Tarjeta titulo="frontend" iconos={frontendAprendiendo} />
             <Tarjeta titulo="backend" iconos={backendAprendiendo} />
@@ -121,16 +121,35 @@ function Index() {
       </section>
 
       <section className="w-[90vw] md:flex md:flex-col md:gap-x-[1rem] md:w-[80vw]">
-        <h2 className="lg:text-xl font-bold mb-[1rem] mt-[1rem] text-[var(--color-texto-dos)]">Educación</h2>
-        {/* <div className="relative w-[230px] rounded-[1rem] overflow-hidden h-[250px] 
-        bg-[url('/tecnm_entrada.avif')] bg-cover 
-        filtro-oscuro bg-center
-        "> */}
-        <div className="relative flex  w-[230px] h-[250px] overflow-hidden rounded-[1rem] filtro-oscuro">
-          <img src="tecnm_entrada.avif" alt="" className="absolute object-cover h-[100%]" />
+        <h2 className="lg:text-xl font-bold mb-[1rem] mt-[1rem] text-[var(--color-texto-dos)]">🎓Educación</h2>
+        <div className="flex relative w-[250px] h-[250px] bg-[var(--color-bg-dos)] rounded-[1rem] overflow-hidden filtro-oscuro">
+          <img src="tecnm_entrada.jpg" alt="" className="absolute object-cover h-[100%]" />
+          <div className="flex w-full flex-col z-1 p-[1rem] gap-[1rem]">
+            <div className="flex flex-col items-center">
+              <h3 className="text-white">TECNM Campus Istmo</h3>
+              <p className="text-sm text-gray-300">2019 - 2024</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="tecnm.png"
+                alt="Logotipo del Instituto Tecnológico del Istmo"
+                className="!w-[100px] !h-[100px] filtro-blanco"
+              />
+            </div>
+            <div className="flex justify-center">
+              <TarjetaSocial
+                redesSociales={tecnmData}
+              />
+            </div>
+          </div>
+        </div>
 
-          <div className="flex flex-col w-full h-[100%] justify-around items-center">
-            <div className=" z-2 w-full h-fit flex flex-col items-center">
+
+        {/* <div className="relative flex  w-[230px] h-[250px] overflow-hidden rounded-[1rem] filtro-oscuro">
+          <img src="tecnm_entrada.jpg" alt="" className="absolute object-cover h-[100%]" />
+
+          <div className="flex flex-col w-full h-[250px] justify-around items-center">
+            <div className=" z-2 w-full h-fit flex flex-col items-center bg-[var(--bg-color-dos)]">
               <h3 className="text-white">TECNM Campus Istmo</h3>
               <p className="text-sm text-gray-300">2019 - 2024</p>
             </div>
@@ -147,9 +166,8 @@ function Index() {
             </div>
           </div>
 
-        </div>
+        </div> */}
 
-        {/*    </div> */}
       </section>
     </>
   );

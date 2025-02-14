@@ -37,6 +37,10 @@
   opacity: 0;
   animation: aparecer 200ms ease-in-out forwards;
 }
+.rapido {
+  opacity: 0;
+  animation: aparecer 100ms ease-in-out forwards;
+}
 
 
 .porcentaje[style*="--porcentaje: 65"],
