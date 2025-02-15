@@ -4,12 +4,13 @@ import redsocial from "../db/redSocial.json";
 import habilidades from "../db/habilidad.json";
 import { useHabilidades } from "../hooks/useHabilidad";
 import Tarjeta from "../components/Tarjeta";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import TemaContext from "../context/TemaContext";
 
 function Index() {
+  const { tema } = useContext(TemaContext);
 
   const tecnmData = redsocial.tecnmData.redesSociales;
-
   // const { redesSociales } = tecnmData;
   const miData = redsocial.miData.redesSociales;
 
@@ -49,7 +50,7 @@ function Index() {
       relative bg-[var(--color-bg)] borde-mexicano 
       p-4 rounded-lg md:grid md:gap-x-[1rem] md:!w-[70vw] lg:!w-[48vw] h-fit">
           <div className="aparecer w-[150px] md:row-[1/_span_3] rounded-[20px] overflow-hidden">
-            <img className="h-[100%] object-cover " src="JArmando.png" alt="José Armando Vázquez Carrasco" />
+            <img className="h-[100%] object-cover" src="JArmando.png" alt="José Armando Vázquez Carrasco" />
           </div>
           <div className="pt-[.5rem] pb-[.5rem]  md:row-[1] md:col-[2/span2]">
             <h2 className="text-sm md:text-xl text-[var(--color-texto-dos)] font-bold">Hola soy </h2>
@@ -63,15 +64,12 @@ function Index() {
             </p>
           </div>
           <div className="flex flex-wrap gap-x-[.5rem] md:row-[3] md:col-[2/span2] mt-[.5rem] mb-[.5rem]">
-            {miData.map(({ href, title, iconSrc, alt }, index) => (
-              <a
-                key={index}
-                className="w-[25px]"
-                href={href}
-                title={title}
-                target="_blank"
-              >
-                <img src={iconSrc} alt={alt} />
+            {miData.map(({ href, title, iconSrc, iconSrcClaro, alt }, index) => (
+              <a key={index} className="w-[25px]" href={href} title={title} target="_blank">
+                <img
+                  src={tema === "oscuro" ? iconSrc : iconSrcClaro} // Aquí cambiamos el src según el tema
+                  alt={alt}
+                />
               </a>
             ))}
             <a
@@ -81,7 +79,7 @@ function Index() {
               target="_blank"
             >
               <span>CV</span>
-              <img src="/portafolio/icons/descargar.svg" alt="CV_JArmado" className="w-[25px]" />
+              <img src={tema === "oscuro" ? "/portafolio/icons/descargar.svg" : "/portafolio/icons/descargar_claro.svg"} alt="CV_JArmado" className="w-[25px]" />
             </a>
             <p>{textToCopy}</p>
             <button onClick={handleCopy} className="flex items-center cursor-pointer">

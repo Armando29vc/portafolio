@@ -1,19 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import "../assets/css/cabecera.css";
-import TarjetaSocial from "../components/TarjetaSocial";
+import TemaContext from "../context/TemaContext";
+/* import TarjetaSocial from "../components/TarjetaSocial";
 import { useTema } from "../hooks/useTema";
 import { useBarra } from "../hooks/useBarra";
 import { miData } from "../db/redSocial.json";
-
+ */
 function Cabecera() {
-  const { tema, cambiarTema } = useTema();
-  const { barraRef, checkboxRef } = useBarra();
-  const { logoSrc, logoAlt, redesSociales } = miData;
+  // const { tema, cambiarTema } = useTema();
+/*   const { barraRef, checkboxRef } = useBarra();
+  const { logoSrc, logoAlt, redesSociales } = miData; */
+  const { tema, dispatch } = useContext(TemaContext);
+
+  const cambiarTema = () => {
+    dispatch({ type: "cambiar-tema" }); // Envia la acción al reducer
+  };
 
   useEffect(() => {
     document.body.classList.remove("claro", "oscuro");
     document.body.classList.add(tema);
   }, [tema]);
+
 
   return (
     <header className="flex bg-[var(--color-bg)] justify-center sticky top-0 z-[999]">
