@@ -4,9 +4,7 @@
       {
         "href": "https://github.com/Armando29vc",
         "title": "GitHub Armando29vc",
-        "iconSrc": "/portafolio/icons/github.svg",
-        "iconSrcClaro": "/portafolio/icons/github_claro.svg",
-        "alt": "GitHub"
+        "iconSrc": "/portafolio/icons/github.svg"
       }
      
     ]
@@ -15,27 +13,23 @@
     "redesSociales": [
       {
         "href": "https://www.facebook.com/tecnm.campus.istmo",
-        "title": "Facebook TecNM",
-        "iconSrc": "/portafolio/icons/facebook.svg",
-        "alt": "Facebook"
+        "title": "Facebook",
+        "iconSrc": "img/sprite.svg#facebook"
       },
       {
         "href": "https://www.youtube.com/@ComunicacionITI",
-        "title": "YouTube TecNM",
-        "iconSrc": "/portafolio/icons/youtube.svg",
-        "alt": "YouTube"
+        "title": "YouTube",
+        "iconSrc": "img/sprite.svg#youtube"
       },
       {
         "href": "https://www.instagram.com/tecnm_campus_istmo/",
-        "title": "Instagram TecNM",
-        "iconSrc": "/portafolio/icons/Instagram.svg",
-        "alt": "Instagram"
+        "title": "Instagram",
+        "iconSrc": "img/sprite.svg#instagram"
       },
       {
         "href": "https://www.tiktok.com/@ingsistemasiti",
-        "title": "TikTok TecNM",
-        "iconSrc": "/portafolio/icons/TikTok-Social-Icon-Mono-White.svg",
-        "alt": "TikTok"
+        "title": "TikTok",
+        "iconSrc": "img/sprite.svg#tiktok"
       }
     ]
   }

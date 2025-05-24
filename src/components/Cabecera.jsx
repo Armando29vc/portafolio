@@ -1,47 +1,38 @@
-import React, { useContext, useEffect } from "react";
-import "../assets/css/cabecera.css";
-import TemaContext from "../context/TemaContext";
-/* import TarjetaSocial from "../components/TarjetaSocial";
-import { useTema } from "../hooks/useTema";
-import { useBarra } from "../hooks/useBarra";
-import { miData } from "../db/redSocial.json";
- */
-function Cabecera() {
-  // const { tema, cambiarTema } = useTema();
-/*   const { barraRef, checkboxRef } = useBarra();
-  const { logoSrc, logoAlt, redesSociales } = miData; */
-  const { tema, dispatch } = useContext(TemaContext);
+import { useEffect } from "react";
+import useDarkMode from "../hooks/useModoOscuro";
 
-  const cambiarTema = () => {
-    dispatch({ type: "cambiar-tema" }); // Envia la acción al reducer
-  };
+export default function Cabecera() {
+  const { darkMode, cambiarTema, tema } = useDarkMode();
 
   useEffect(() => {
-    document.body.classList.remove("claro", "oscuro");
-    document.body.classList.add(tema);
+    document.documentElement.classList.remove("claro", "oscuro");
+    document.documentElement.classList.add(tema);
   }, [tema]);
 
-
   return (
-    <header className="flex bg-[var(--color-bg)] justify-center sticky top-0 z-[999]">
-      <div className="flex w-[80vw] justify-between">
-      <div className="logotipo">
-        <img src="armando29vc.avif" alt="Logotipo de Armando29vc" />
-          <h1 className="m:texto-xs texto-lg text-[var(--color-texto-dos)] font-bold">Armando29vc</h1>
-        </div>
-        <div className="flex items-center">
+    <header className="flex justify-center p-4">
+      <div className="flex justify-between w-full md:max-w-[85vw]">
+        <a href={import.meta.env.BASE_URL} className="flex items-center gap-2">
           <img
-            className="tema"
-            onClick={cambiarTema}
-            src={tema === "oscuro" ? "icons/noche.svg" : "icons/dia.svg"}
-            alt={`Cambiar a tema ${tema === "oscuro" ? "oscuro" : "claro"}`}
-            title={tema === "oscuro" ? "oscuro" : "claro"}
+            className="w-8 md:w-10 rounded-full"
+            src="img/armando29vc.avif"
+            alt="Logotipo de Armando29vc"
           />
+          <h1 className={`font-bold ${darkMode ? "text-cyan-300" : "text-blue-700"}`}>Armando29vc</h1>
+        </a>
+        <nav>
+        </nav>
+        <div className="flex items-center">
+          <button onClick={cambiarTema} className="cursor-pointer" alt={`Cambiar a tema ${darkMode ? "oscuro" : "claro"}`}
+            title={darkMode ? "oscuro" : "claro"}>
+            <svg
+              className={`w-8 h-8`}
+            >
+              <use href={`${darkMode ? "img/sprite.svg#oscuro" : "img/sprite.svg#claro"}`} />
+            </svg>
+          </button>
         </div>
       </div>
-      
     </header>
-  );
+  )
 }
-
-export default Cabecera;

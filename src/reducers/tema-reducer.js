@@ -1,7 +1,6 @@
 export const initialState = {
   tema: localStorage.getItem("tema") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "oscuro" : "claro"),
 };
-
 export const temaReducer = (state, action) => {
   switch (action.type) {
     case "cambiar-tema":

@@ -2,21 +2,21 @@
   "frontend": {
     "conocimientos": [
       {
-        "icono": "icons/HTML5_Badge.svg",
+        "icono": "img/sprite.svg#html5",
         "nombre": "HTML5"
       },
       {
-        "icono": "icons/css3.svg",
+        "icono": "img/sprite.svg#css3",
         "nombre": "CSS3"
       },
       {
-        "icono": "icons/js.svg",
+        "icono": "img/sprite.svg#js",
         "nombre": "JS"
       }
     ],
     "aprendiendo": [
       {
-        "icono": "icons/tailwindcss-mark.d52e9897.svg",
+        "icono": "img/sprite.svg#tailwindcss",
         "nombre": "Tailwind CSS"
       }
     ]
@@ -25,7 +25,7 @@
     "conocimientos": [],
     "aprendiendo": [
       {
-        "icono": "icons/Strapi.favicon.svg",
+        "icono": "img/sprite.svg#strapi",
         "nombre": "Strapi"
       }
     ]
@@ -34,7 +34,7 @@
     "conocimientos": [],
     "aprendiendo": [
       {
-        "icono": "elephant64.png",
+        "icono": "img/elephant64.png",
         "nombre": "PostgreSQL"
       }
     ]
