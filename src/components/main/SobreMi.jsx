@@ -26,8 +26,8 @@ export default function SobreMi() {
                   window.open(url, "_blank", "noopener,noreferrer");
                 }}
               >
-                <svg className="w-8 h-8 md:w-6 md:h-6">
-                  <use className={`${darkMode ? "fill-white" : "fill-[#24292f]"}`} href="img/sprite.svg#github" />
+                <svg className={`w-8 h-8 md:w-6 md:h-6 ${darkMode ? "fill-[#fff]" : "fill-[#24292f]"}`}>
+                  <use href="img/sprite.svg#github" />
                 </svg>
               </button>
               <button

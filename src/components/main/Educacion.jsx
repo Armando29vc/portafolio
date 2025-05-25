@@ -20,25 +20,7 @@ export default function Educacion() {
             <div className="py-3">
               <img src="img/tecnm.png" alt="" className="w-28 drop-shadow-[1px_2px_#fff]" />
             </div>
-            <div className="flex gap-3">
-              {tecnmData.map(({ href, iconSrc, title }, index) => (
-                <button
-                  className="cursor-pointer"
-                  title={title}
-                  onClick={() => {
-                    const url = href
-                    window.open(url, "_blank", "noopener,noreferrer");
-                  }}
-                >
-                  <svg className="w-6 h-6">
-                    <use
-                      className={`fill-white`}
-                      href={iconSrc}
-                    />
-                  </svg>
-                </button>
-              ))}
-            </div>
+            
           </div>
         </div>
 
