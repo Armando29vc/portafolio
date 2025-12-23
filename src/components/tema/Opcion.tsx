@@ -21,7 +21,7 @@ export const Opcion = ({ temaSeleccionado, texto }: OpcionProps) => {
             height={24}
             className="text-blue-800 dark:text-cyan-300"
           >
-            <use href="/sprite.svg#verificar" />
+            <use href="sprite.svg#verificar" />
           </svg>
         )}
       </div>

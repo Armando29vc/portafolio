@@ -13,7 +13,7 @@ export const Inicio = () => {
           <div className="flex items-center w-45">
             <img
               className="rounded-lg object-cover w-full h-auto drop-shadow-[0_0_3px_#193cb8] dark:drop-shadow-[0_0_3px_#53eafd]"
-              src="/JArmando.png"
+              src="JArmando.png"
               alt="José Armando Vázquez Carrasco"
             />
           </div>
@@ -43,18 +43,18 @@ export const Inicio = () => {
               className="flex flex-col gap-1 items-center"
             >
               <svg className="w-8 h-8 md:w-6 md:h-6 fill-black dark:fill-white">
-                <use href="/sprite.svg#github"></use>
+                <use href="sprite.svg#github"></use>
               </svg>
               <span className="text-sm">github</span>
             </a>
             <a
-              href="/descargar/CV_Armando29vc.pdf"
+              href="descargar/CV_Armando29vc.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col gap-1 items-center"
             >
               <svg className="w-8 h-8 md:w-6 md:h-6 fill-white">
-                <use href="/sprite.svg#cv"></use>
+                <use href="sprite.svg#cv"></use>
               </svg>
               <span className="text-sm">curriculum</span>
             </a>
@@ -62,13 +62,13 @@ export const Inicio = () => {
           <section className="flex flex-col gap-3">
             <div className="flex h-14 relative items-center gap-2 shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd] rounded-md">
               <img
-                src="/tecnm_entrada.jpg"
-                alt=""
+                src="tecnm_entrada.jpg"
+                alt="Entrada TecNM"
                 className="object-cover w-full h-14 rounded-md"
               />
               <div className="absolute inset-0 bg-black/75 rounded-md"></div>
               <div className="absolute flex items-center justify-center w-full">
-                <img src="/tecnm.png" className="size-10" alt="logo TecNM" />
+                <img src="tecnm.png" className="size-10" alt="logo TecNM" />
                 <p className="text-center font-semibold text-white">
                   TECNM Campus Istmo <br />{" "}
                   <span className="text-gray-400 font-semibold">
@@ -87,7 +87,7 @@ export const Inicio = () => {
               aria-hidden="true"
               className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
             >
-              <use href="/sprite.svg#sobre-mi"></use>
+              <use href="sprite.svg#sobre-mi"></use>
             </svg>
             Sobre mí
           </h2>
@@ -105,14 +105,14 @@ export const Inicio = () => {
             aria-hidden="true"
             className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
           >
-            <use href="/sprite.svg#pc"></use>
+            <use href="sprite.svg#pc"></use>
           </svg>
           Tecnologías y{" "}
           <svg
             aria-hidden="true"
             className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
           >
-            <use href="/sprite.svg#foco"></use>
+            <use href="sprite.svg#foco"></use>
           </svg>{" "}
           Conocimientos
         </h2>
@@ -124,7 +124,7 @@ export const Inicio = () => {
                   aria-hidden="true"
                   className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
                 >
-                  <use href="/sprite.svg#control"></use>
+                  <use href="sprite.svg#control"></use>
                 </svg>{" "}
                 Habilidades
               </h3>
@@ -135,19 +135,19 @@ export const Inicio = () => {
                 <div className="flex gap-4">
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#html5"></use>
+                      <use href="sprite.svg#html5"></use>
                     </svg>
                     <span className="font-semibold">HTML5</span>
                   </div>
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#css3"></use>
+                      <use href="sprite.svg#css3"></use>
                     </svg>
                     <span className="font-semibold">CSS3</span>
                   </div>
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#js"></use>
+                      <use href="sprite.svg#js"></use>
                     </svg>
                     <span className="font-semibold">JS</span>
                   </div>
@@ -160,13 +160,13 @@ export const Inicio = () => {
                 <div className="flex gap-4">
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#react"></use>
+                      <use href="sprite.svg#react"></use>
                     </svg>
                     <span className="font-semibold">React</span>
                   </div>
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#tailwindcss"></use>
+                      <use href="sprite.svg#tailwindcss"></use>
                     </svg>
                     <span className="font-semibold">TailwindCSS</span>
                   </div>
@@ -181,7 +181,7 @@ export const Inicio = () => {
                   aria-hidden="true"
                   className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
                 >
-                  <use href="/sprite.svg#rompecabezas"></use>
+                  <use href="sprite.svg#rompecabezas"></use>
                 </svg>{" "}
                 Aprendiendo
               </h3>
@@ -192,7 +192,7 @@ export const Inicio = () => {
                 <div className="flex gap-4">
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#strapi"></use>
+                      <use href="sprite.svg#strapi"></use>
                     </svg>
                     <span className="font-semibold">Strapi</span>
                   </div>
@@ -205,7 +205,7 @@ export const Inicio = () => {
                 <div className="flex gap-4">
                   <div className="flex gap-2 items-center">
                     <svg className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-                      <use href="/sprite.svg#postgresql"></use>
+                      <use href="sprite.svg#postgresql"></use>
                     </svg>
                     <span className="font-semibold">PostgreSQL</span>
                   </div>

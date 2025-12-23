@@ -19,7 +19,7 @@ export const Tema = () => {
           height={24}
           className="cursor-pointer text-blue-800 dark:text-cyan-300"
         >
-          <use href={`/sprite.svg#${iconoTema}`} />
+          <use href={`sprite.svg#${iconoTema}`} />
         </svg>
       </button>
 

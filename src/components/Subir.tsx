@@ -32,7 +32,7 @@ export const Subir = () => {
       aria-label="Subir"
     >
       <svg className="w-10 h-10 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]">
-        <use href="/sprite.svg#flecha-arriba"></use>
+        <use href="sprite.svg#flecha-arriba"></use>
       </svg>
     </button>
   );
