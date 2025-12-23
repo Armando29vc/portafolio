@@ -36,9 +36,18 @@ export const Tema = () => {
                 La configuración solo se aplica a este navegador
               </span>
             </div>
-            <Opcion temaSeleccionado="dark" texto="Tema oscuro" />
-            <Opcion temaSeleccionado="light" texto="Tema claro" />
             <Opcion
+              onSelect={() => setMostrar(false)}
+              temaSeleccionado="dark"
+              texto="Tema oscuro"
+            />
+            <Opcion
+              onSelect={() => setMostrar(false)}
+              temaSeleccionado="light"
+              texto="Tema claro"
+            />
+            <Opcion
+              onSelect={() => setMostrar(false)}
               temaSeleccionado="system"
               texto="Usar tema del dispositivo"
             />
