@@ -8,16 +8,16 @@ export const Inicio = () => {
         <blockquote>"Si Puedes Imaginarlo Puedes Programarlo"</blockquote>
         <cite>Alejandro Taboada</cite>
       </section>
-      <section className="flex gap-5 p-3 rounded-lg border-transparent shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd]">
-        <div className="max-w-45 flex flex-col gap-2 justify-between">
-          <div className="flex items-center w-45">
+      <section className="min-w-110 flex gap-2 p-3 rounded-lg border-transparent shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd]">
+        <div className="max-w-42 flex flex-col gap-2 ">
+          <div className="flex items-center w-42 h-full">
             <img
               className="rounded-lg object-cover w-full h-auto drop-shadow-[0_0_3px_#193cb8] dark:drop-shadow-[0_0_3px_#53eafd]"
               src="JArmando.png"
               alt="José Armando Vázquez Carrasco"
             />
           </div>
-          <div className="w-45">
+          <div className="w-42">
             <h2 className="text-sm text-blue-800 dark:text-cyan-300">
               José Armando <br />
               Vázquez Carrasco
@@ -29,7 +29,7 @@ export const Inicio = () => {
         </div>
         <div className="w-full md:max-w-85">
           <div className="">
-            <p className="text-lg font-semibold">
+            <p className="text-base font-semibold">
               Me encanta el anime 🐞❤️🐾, 🎮 los videojuegos 🕹️, la música
               electrónica 🎧 y clásica 📀, y mi pasatiempo favorito es la
               programación 💻.
@@ -42,7 +42,7 @@ export const Inicio = () => {
               rel="noopener noreferrer"
               className="flex flex-col gap-1 items-center"
             >
-              <svg className="w-8 h-8 md:w-6 md:h-6 fill-black dark:fill-white">
+              <svg className="w-6 h-6 fill-black dark:fill-white">
                 <use href="sprite.svg#github"></use>
               </svg>
               <span className="text-sm">github</span>
@@ -53,7 +53,7 @@ export const Inicio = () => {
               rel="noopener noreferrer"
               className="flex flex-col gap-1 items-center"
             >
-              <svg className="w-8 h-8 md:w-6 md:h-6 fill-white">
+              <svg className="w-6 h-6 fill-white">
                 <use href="sprite.svg#cv"></use>
               </svg>
               <span className="text-sm">curriculum</span>
@@ -85,7 +85,7 @@ export const Inicio = () => {
           <h2 className="flex items-center gap-2 text-2xl font-bold text-blue-800 dark:text-cyan-300">
             <svg
               aria-hidden="true"
-              className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
+              className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
             >
               <use href="sprite.svg#sobre-mi"></use>
             </svg>
@@ -100,17 +100,17 @@ export const Inicio = () => {
         </section>
       </section>
       <section className="flex flex-col gap-5">
-        <h2 className="flex flex-wrap items-center gap-2 text-3xl font-bold text-blue-800 dark:text-cyan-300">
+        <h2 className="flex flex-wrap items-center gap-2 text-xl font-bold text-blue-800 dark:text-cyan-300">
           <svg
             aria-hidden="true"
-            className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
+            className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
           >
             <use href="sprite.svg#pc"></use>
           </svg>
           Tecnologías y{" "}
           <svg
             aria-hidden="true"
-            className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
+            className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
           >
             <use href="sprite.svg#foco"></use>
           </svg>{" "}
@@ -179,7 +179,7 @@ export const Inicio = () => {
               <h3 className="flex items-center gap-2 text-2xl font-bold text-blue-800 dark:text-cyan-300">
                 <svg
                   aria-hidden="true"
-                  className="w-8 h-8 md:w-8 md:h-8 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
+                  className="w-6 h-6 text-blue-800 dark:text-cyan-300  [--logo-icon:white] dark:[--logo-icon:black]"
                 >
                   <use href="sprite.svg#rompecabezas"></use>
                 </svg>{" "}
