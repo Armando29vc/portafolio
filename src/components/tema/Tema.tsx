@@ -13,6 +13,7 @@ export const Tema = () => {
       <button
         onClick={() => setMostrar(!mostrar)}
         className="relative p-2  z-10"
+        aria-label="Cambiar tema"
       >
         <svg
           width={24}
