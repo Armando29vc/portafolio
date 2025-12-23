@@ -8,26 +8,26 @@ export const Inicio = () => {
         <blockquote>"Si Puedes Imaginarlo Puedes Programarlo"</blockquote>
         <cite>Alejandro Taboada</cite>
       </section>
-      <section className="min-w-110 flex gap-2 p-3 rounded-lg border-transparent shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd]">
-        <div className="max-w-42 flex flex-col gap-2 ">
-          <div className="flex items-center w-42 h-full">
+      <section className="min-w-110 max-w-lg grid grid-cols-[168px_1fr] p-3 rounded-lg border-transparent shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd]">
+        <div className="flex flex-col gap-2 mr-2">
+          <div className="flex items-center w-full h-full">
             <img
               className="rounded-lg object-cover w-full h-auto drop-shadow-[0_0_3px_#193cb8] dark:drop-shadow-[0_0_3px_#53eafd]"
               src="JArmando.png"
               alt="José Armando Vázquez Carrasco"
             />
           </div>
-          <div className="w-42">
-            <h2 className="text-sm text-blue-800 dark:text-cyan-300">
+          <div className="w-full">
+            <p className="text-sm text-blue-800 dark:text-cyan-300">
               José Armando <br />
               Vázquez Carrasco
-            </h2>
-            <h3 className="text-xs text-gray-600 dark:text-gray-400 font-semibold">
+            </p>
+            <p className="text-xs text-gray-600 dark:text-gray-400 font-semibold">
               Ing. Sistemas Computacionales
-            </h3>
+            </p>
           </div>
         </div>
-        <div className="w-full md:max-w-85">
+        <div className="w-full">
           <div className="">
             <p className="text-base font-semibold">
               Me encanta el anime 🐞❤️🐾, 🎮 los videojuegos 🕹️, la música
@@ -117,7 +117,7 @@ export const Inicio = () => {
           Conocimientos
         </h2>
         <div className="flex flex-wrap gap-10">
-          <div className="shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd] p-4 w-full md:w-auto">
+          <div className="shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd] p-4 w-full md:w-auto rounded-lg">
             <section>
               <h3 className="flex items-center gap-2 text-2xl font-bold text-blue-800 dark:text-cyan-300">
                 <svg
@@ -174,7 +174,7 @@ export const Inicio = () => {
               </div>
             </section>
           </div>
-          <div className="shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd] p-4 w-full md:w-auto">
+          <div className="shadow-[0_0_3px_#193cb8]  dark:shadow-[0_0_3px_#53eafd] p-4 w-full md:w-auto rounded-lg">
             <section>
               <h3 className="flex items-center gap-2 text-2xl font-bold text-blue-800 dark:text-cyan-300">
                 <svg
