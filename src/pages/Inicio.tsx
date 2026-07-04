@@ -48,7 +48,7 @@ export const Inicio = () => {
               <span className="text-sm">github</span>
             </a>
             <a
-              href="descargar/CV_Armando29vc.pdf"
+              href="descargar/CV_JOSE_ARMANDO_VAZQUEZ_CARRASCO_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col gap-1 items-center"
